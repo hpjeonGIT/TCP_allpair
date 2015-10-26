@@ -1,34 +1,5 @@
 PROGRAM TCP_SPME_VAF
 !
-! Two component plasma - electron and ion - analysis code for PBC
-! This code is specified for very high density plasma
-!
-! Aug. 03. 2006,
-! Theoretical division, Los Alamos National Laboratory
-! Department of Applied Science, University of California, Davis
-! Byoungseon Jeon
-!
-! Sept. 11. 2006,
-! Smooth particle mesh Ewald imlemented
-!
-! Sept. 16. 2006,
-! FFTE library applied
-!
-! Oct. 03. 2006,
-! DPME implemented - split PME and direct sum nodes
-!
-! Oct. 30. 2006,
-! Diffusion coefficient and particle tracing implemented.
-! Position array %xx save position as absolute ones - not trucated by PBC
-!
-! Dec. 20. 2006.
-! VAF implemented. Diffusion coefficient canceled.
-!
-! Feb. 20. 2007.
-! Implement 5th order interpolation for SPME
-!
-! July 21. 2009.
-! Correct double precision functions and force routine at the initial step
 !
 USE DATASTR
 IMPLICIT NONE
